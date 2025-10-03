@@ -1,8 +1,8 @@
 # BSc Short Coding Exercises
 
-This repository contains a collection of small coding tasks and numerical exercises undertaken throughout my BSc in Theoretical Physics (2020–2024). Each task is contained in its own Jupyter notebook, with explanations, background, and results documented in the markdown cells. The purpose of this repo is to showcase the coding and computational physics skills I developed during my undergraduate degree.
+This repository contains a collection of small coding tasks and numerical exercises undertaken throughout my BSc in Theoretical Physics (2020–2024). Each task is contained in its own Jupyter notebook (with explanations, background, and results documented in the markdown cells) or in a folder with its own README. The purpose of this repo is to showcase the coding and computational physics skills I developed during my undergraduate degree.
 
-## Notebooks
+## Excersizes
 
 * **Baseballs in Flight** – Simulates batted baseball trajectories under gravity, drag, and spin using Python's `solve_ivp` for numerical integration. Includes Monte Carlo sampling to explore variability in initial speed, angle, and spin, demonstrating physics-based modelling and stochastic simulation.
 
