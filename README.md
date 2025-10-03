@@ -11,6 +11,5 @@ This repository contains a collection of small coding tasks and numerical exerci
 ## Usage
 
 * Each notebook can be executed independently.
-* Python packages required: `numpy`, `scipy`, `matplotlib`, `pandas` (if data handling is needed).
 * Markdown cells provide explanations, derivations, and interpretations of results.
 
