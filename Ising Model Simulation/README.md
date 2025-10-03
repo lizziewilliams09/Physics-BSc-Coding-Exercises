@@ -46,24 +46,18 @@ Simulates and animates the lattice evolution over time using either Glauber or K
 * `nsteps`: Number of sweeps/steps in the simulation
 * `frequency`: Interval (ms) between frames in the animation
 
-**Example:**
-
-```bash
-%run animations.py 50 2.5 Glauber 1000 50
-```
-
 ---
 
-### 2. `data_with_errors.py`
+### 2. `datawitherrors.py`
 
 Performs simulations across a range of temperatures and calculates:
 
-* Average magnetization
+* Average magnetisation
 * Susceptibility
 * Average energy
 * Heat capacity
 
-It also estimates **errors** using a bootstrap resampling method. The output is written to text files in the `Data files/` folder:
+It also estimates errors using a bootstrap resampling method. The output is written to text files:
 
 * `Glauber.txt` – Data from Glauber dynamics
 * `Kawasaki.txt` – Data from Kawasaki dynamics
@@ -74,23 +68,20 @@ It also estimates **errors** using a bootstrap resampling method. The output is 
 %run data_with_errors.py
 ```
 
-**Notes:**
-
-* The script uses default parameters: lattice size 50, 10000 sweeps per temperature, temperatures 1.0–3.0 in steps of 0.1.
-* You can modify parameters by editing the script.
+**Note:** The script uses default parameters: lattice size 50, 10000 sweeps per temperature, temperatures 1.0–3.0 in steps of 0.1. You can modify parameters by editing the script.
 
 ---
 
-### 3. `read_in_graphs.py`
+### 3. `read in graphs from errors.py`
 
-Reads data files from `Data files/` and produces graphs of:
+Reads data files and produces graphs of:
 
-* Average absolute magnetization vs. temperature
+* Average absolute magnetisation vs. temperature
 * Susceptibility vs. temperature
 * Average energy vs. temperature
 * Heat capacity vs. temperature
 
-Graphs for Kawasaki dynamics include magnetization and susceptibility to show they are effectively zero.
+**Note:** Graphs for Kawasaki dynamics still include magnetization and susceptibility to show they are effectively zero.
 
 **Usage:**
 
@@ -98,42 +89,10 @@ Graphs for Kawasaki dynamics include magnetization and susceptibility to show th
 %run read_in_graphs.py
 ```
 
-**Output:**
-
-* The figures are displayed interactively and can be saved manually if desired.
-* Graphs are also stored in the `Graphs/` folder (if previously generated).
-
----
-
-## Example Workflow
-
-1. **Visualize dynamics:**
-
-```bash
-%run animations.py 50 2.5 Glauber 1000 50
-```
-
-2. **Generate data and calculate errors:**
-
-```bash
-%run data_with_errors.py
-```
-
-* This produces `Glauber.txt` and `Kawasaki.txt` in `Data files/`.
-
-3. **Plot graphs from data:**
-
-```bash
-%run read_in_graphs.py
-```
-
-* Plots will include error bars where applicable and illustrate critical behavior around the phase transition.
-
----
-
 ## Background Notes
 
 * **Critical Temperature Estimation:** The phase transition is observable as a sharp change in magnetization or a peak in heat capacity. For a 2D square lattice Ising model using Glauber dynamics, the critical temperature is approximately `T_c ≈ 2.27` (in units where J/k_B = 1).
 * **Periodic Boundary Conditions:** Implemented to avoid edge effects in the lattice.
 * **Equilibration and Sampling:** Observables are measured after an initial equilibration period and at intervals to reduce correlation between samples.
 * **Error Estimation:** Bootstrap resampling is used to calculate uncertainties in susceptibility and heat capacity.
+
