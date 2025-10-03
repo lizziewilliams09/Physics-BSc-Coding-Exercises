@@ -222,7 +222,8 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
   * Part 4 focuses on fluctuations along a fixed parameter slice.
   * Part 5 explores effects of immunity fraction on outbreak prevention.
 
-* **Files:** All `.txt` files in the root correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
+* **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
 
 * **Graphs:** Saved in `GRAPHS` folder; descriptive titles include relevant calculations (e.g., glider velocity).
+
 
