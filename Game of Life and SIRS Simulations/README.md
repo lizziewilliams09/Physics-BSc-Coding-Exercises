@@ -31,7 +31,7 @@ State transitions are stochastic (random) and depend on the individual and their
 These rules allow the model to capture realistic dynamics of epidemic spread, including outbreaks, persistence, and eventual equilibrium.
 
 
-## **Repository Structure**
+## **Folder Structure**
 
 ```
 / (root)
@@ -225,5 +225,6 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
 * **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
 
 * **Graphs:** Saved in `GRAPHS` folder; descriptive titles include relevant calculations (e.g., glider velocity).
+
 
 
