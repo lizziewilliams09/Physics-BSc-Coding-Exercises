@@ -1,6 +1,6 @@
 # BSc Short Coding Exercises
 
-This repository contains a collection of small coding tasks and numerical exercises undertaken throughout my BSc in Theoretical Physics (2020–2024). Each task is contained in its own Jupyter notebook (with explanations, background, and results documented in the markdown cells) or in a folder with its own README. The purpose of this repo is to showcase the coding and computational physics skills I developed during my undergraduate degree.
+This repository contains a collection of coding tasks and numerical exercises completed during my BSc in Theoretical Physics (2020–2024). Each task is provided either as a Jupyter notebook (with explanations, background, and results documented in the markdown cells) or as a folder containing multiple Python scripts along with a dedicated README. The purpose of this repository is to showcase the coding, simulation, and computational physics skills I developed throughout my undergraduate studies.
 
 ## Excersizes
 
