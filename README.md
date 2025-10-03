@@ -10,5 +10,4 @@ This repository contains a few of the coding tasks and numerical exercises compl
 
 * **Ising Model Simulation**: Simulates the 2D Ising model on a square lattice with Glauber and Kawasaki dynamics. Produces lattice animations, numerical data with error estimates, and plots of magnetisation, susceptibility, energy, and heat capacity. Demonstrates skills in numerical simulation, statistical analysis, and visualisation of complex physical systems.
 
-
-
+* **Game of Life and SIRS Simulations**: Implements 2D cellular automata (Game of Life) and stochastic epidemic dynamics (SIRS model) on a lattice. Generates animations, numerical data, and visualisations for equilibration times, glider motion, infection prevalence, variance, and immunity thresholds. Demonstrates skills in stochastic simulation, handling periodic boundary conditions, data analysis, and reproducible plotting.
