@@ -1,6 +1,3 @@
-Absolutely! Here's a **comprehensive README** for your Ising Model folder. I’ve structured it with background, folder structure, usage instructions, and details about each script. You can paste this directly as a Markdown file (`README.md`) in your folder.
-
-```markdown
 # Ising Model Simulation
 
 This folder contains a Python implementation of the **two-dimensional Ising model** on a square lattice. It is part of my "Short Exercises" repository showcasing coding and computational physics tasks from my BSc in Theoretical Physics (2020–2024).
@@ -140,24 +137,3 @@ Graphs for Kawasaki dynamics include magnetization and susceptibility to show th
 * **Periodic Boundary Conditions:** Implemented to avoid edge effects in the lattice.
 * **Equilibration and Sampling:** Observables are measured after an initial equilibration period and at intervals to reduce correlation between samples.
 * **Error Estimation:** Bootstrap resampling is used to calculate uncertainties in susceptibility and heat capacity.
-
----
-
-## References
-
-* [K. Huang, *Statistical Mechanics*, 2nd Edition, 1987]
-* [N. Metropolis et al., *Equation of State Calculations by Fast Computing Machines*, 1953]
-* [Wikipedia: Ising model](https://en.wikipedia.org/wiki/Ising_model)
-
----
-
-This folder demonstrates **simulation, data analysis, and visualization skills** in computational physics, and is part of my collection of short coding exercises.
-
-```
-
----
-
-If you want, I can also **draft a slightly shorter “portfolio-friendly” version** for the main `Short Exercises` README that introduces this folder in one paragraph, so it doesn’t overwhelm someone browsing your repo.  
-
-Do you want me to do that too?
-```
