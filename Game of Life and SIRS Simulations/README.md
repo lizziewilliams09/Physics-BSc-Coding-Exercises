@@ -16,8 +16,6 @@ The Game of Life is a 2D cellular automaton where each cell on a grid can be eit
 
 ```
 / (root)
-├── ANIMATION
-│   ├── GoLanimation.py
 ├── DATAFILES
 │   └── makes_all_the_graphs.py
 │   └── GoLpart2data.txt
@@ -25,6 +23,7 @@ The Game of Life is a 2D cellular automaton where each cell on a grid can be eit
 ├── GRAPHS
 │   ├── GoL Histogram of Equilibration Times.png
 │   ├── GoL Velocity of Centre of Mass of Glider.png
+├── GoLanimation.py
 ├── GoLpart2.py
 ├── GoLpart3.py
 
@@ -111,6 +110,7 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
 * **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
 
 * **Graphs:** Seen in `GRAPHS` folder; descriptive titles include relevant calculations (e.g., glider velocity).
+
 
 
 
