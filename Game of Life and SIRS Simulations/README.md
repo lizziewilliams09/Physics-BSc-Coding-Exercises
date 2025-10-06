@@ -17,7 +17,7 @@ The Game of Life is a 2D cellular automaton where each cell on a grid can be eit
 ```
 / (root)
 ├── DATAFILES
-│   └── makes_all_the_graphs.py
+│   └── makes all the graphs.py
 │   └── GoLpart2data.txt
 │   └── GoLpart3data.txt
 ├── GRAPHS
@@ -67,7 +67,7 @@ These scripts simulate models and save results as text files for later visualisa
 
 ## **3. Graphs**
 
-All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
+All graphs are produced from the `DATAFILES/makes all the graphs.py` script.
 
 1. **GoL Histogram of Equilibration Times**
 
@@ -92,7 +92,7 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
 2. Save all files in the `DATAFILES/` folder, then generate all graphs by running:
 
    ```bash
-   python DATAFILES/makes_all_the_graphs.py
+   python DATAFILES/makes all the graphs.py
    ```
 
    This will collect all .txt outputs and recreate the five graphs seen in the `GRAPHS/` folder.
@@ -107,9 +107,10 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
   * Equilibration times vary; histogram shows typical distribution.
   * Glider velocity shows how patterns propagate over time.
 
-* **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
+* **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes all the graphs.py`.
 
 * **Graphs:** Seen in `GRAPHS` folder; descriptive titles include relevant calculations (e.g., glider velocity).
+
 
 
 
