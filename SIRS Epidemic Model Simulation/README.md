@@ -1,20 +1,10 @@
-# Game of Life and SIRS Simulations
+# SIRS Model for Epidemics Spreading
 
-This folder contains Python scripts, data files, and graphs for simulating the **Game of Life (GoL)** and **SIRS epidemic model**. It includes animations, data generation scripts, analysis, and visualisation. This project demonstrates skills in simulating cellular automata, stochastic processes, handling periodic boundary conditions, bootstrap error analysis, and producing reproducible visualisations
+This folder contains Python scripts, data files, and graphs for simulating the **SIRS epidemic model**. It includes an animation, data generation scripts, analysis, and visualisation. This project demonstrates skills in stochastic processes, bootstrap error analysis, and producing reproducible plots and visualisations.
 
 > Developed as part of my *Modelling and Visualisation* course during my BSc in Theoretical Physics, and is included here in my Physics BSc Coding Exercises portfolio.
 
-## **Overviews of Models** 
-
-### **Game of Life (GoL)**
-
-The Game of Life is a 2D cellular automaton where each cell on a grid can be either alive or dead. The state of each cell evolves over discrete time steps according to simple rules based on its neighbours:
-
-1. A live cell with fewer than 2 or more than 3 live neighbours dies (underpopulation or overpopulation).
-2. A dead cell with exactly 3 live neighbours becomes alive (reproduction).
-   This simple set of rules produces complex patterns and behaviours, including oscillators, gliders, and stable structures.
-
-### **SIRS Epidemic Model**
+## **Overviews of Model** 
 
 The SIRS model simulates the spread of an infection across a population arranged on a 2D grid. Each individual can be in one of three states:
 
@@ -35,54 +25,25 @@ These rules allow the model to capture realistic dynamics of epidemic spread, in
 
 ```
 / (root)
-├── ANIMATIONS
-│   ├── GoLanimation.py
-│   └── SIRSanimation.py
 ├── DATAFILES
-│   └── makes_all_the_graphs.py
-│   └── GoLpart2data.txt
-│   └── GoLpart3data.txt
+│   └── makes all the graphs.py
 │   └── SIRSpart3data.txt
 │   └── SIRSpart4data.txt
 │   └── SIRSpart5data.txt
 ├── GRAPHS
-│   ├── GoL Histogram of Equilibration Times.png
-│   ├── GoL Velocity of Centre of Mass of Glider.png
 │   ├── SIRS Colour Plot of Average Number of Infected Sites.png
 │   ├── SIRS Variance of Number of Infected Sites Along a Cut.png
 │   └── SIRS Finding the Immunity Fraction to Prevent Spread.png
-├── GoLpart2.py
-├── GoLpart3.py
+├── SIRSanimation.py
 ├── SIRSpart3.py
 ├── SIRSpart4.py
 ├── SIRSpart5.py
 
 ```
 
-The repository separates animations (for visual demonstrations) from analysis scripts (which generate data used for plotting). The animations are optional and independent of the main results.
+The repository separates the animation (for visual demonstration) from analysis scripts (which generate data used for plotting). The animations are optional and independent of the main results.
 
-## **1. Animations**
-
-### **Game of Life (GoL)**
-
-* **Script:** `GoLanimation.py`
-* **Purpose:** Creates an animation of the Game of Life cellular automaton.
-* **Usage:**
-
-```bash
-%run GoLanimation.py {size} {condition}
-```
-
-Where `size` is the grid size and `condition` is one of:
-* `random` - random initial state
-* `oscillator` - blinker pattern
-* `glider` - glider pattern
-
-**Details:** The animation uses matplotlib to visualize the grid, updating each cell according to GoL rules. The glider pattern is used later to track centre-of-mass motion.
-
-
-
-### **SIRS Epidemic Model**
+## **1. Animation**
 
 * **Script:** `SIRSanimation.py`
 * **Purpose:** Animates the spread of infection on a 2D lattice using SIRS rules.
@@ -109,26 +70,7 @@ Where:
 
 ## **2. Data Generation Scripts**
 
-These scripts simulate models and save results as text files for later visualization.
-
-### **Game of Life**
-
-1. **`GoLpart2.py`**
-
-   * Simulates random initial configurations.
-   * Runs until the system reaches **equilibrium** (no changes in the last 10 steps).
-   * Generates `GoLpart2data.txt` containing **times to equilibrate**.
-   * Used to produce **Histogram of Equilibration Times**.
-
-2. **`GoLpart3.py`**
-
-   * Tracks the **centre of mass of a glider** pattern over time.
-   * Outputs `GoLpart3data.txt` with time steps and x/y centre-of-mass positions.
-   * Used to calculate **velocity of the glider**.
-
-
-
-### **SIRS Epidemic Model**
+These scripts simulate models and save results as text files for later visualisation.
 
 1. **`SIRSpart3.py`**
 
@@ -153,36 +95,24 @@ These scripts simulate models and save results as text files for later visualiza
 
 ## **3. Graphs**
 
-All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
+All graphs are produced from the `DATAFILES/makes all the graphs.py` script.
 
-1. **GoL Histogram of Equilibration Times**
-
-   * Reads `GoLpart2data.txt`.
-   * Histogram shows distribution of the number of steps required for random GoL grids to reach equilibrium. This distribution typically shows a peak at short equilibration times, reflecting rapid convergence to stable/oscillating states.
-   * Color-coded by bin height.
-
-2. **GoL Velocity of Centre of Mass of Glider**
-
-   * Reads `GoLpart3data.txt`.
-   * Scatter plot of x/y centre-of-mass over time.
-   * Velocity calculated using linear regression over a selected step range.
-
-3. **SIRS Colour Plot of Average Number of Infected Sites**
+1. **SIRS Colour Plot of Average Number of Infected Sites**
 
    * Reads `SIRSpart3data.txt`.
    * Heatmap in `p1-p3` plane, shows **average fraction of infected sites** for each parameter combination.
 
-4. **SIRS Variance of Number of Infected Sites Along a Cut**
+2. **SIRS Variance of Number of Infected Sites Along a Cut**
 
    * Reads `SIRSpart4data.txt`.
    * Plot of variance vs `p1` at fixed `p2 = p3 = 0.5`. Peaks in the variance indicate regions of parameter space with strong fluctuations, associated with cyclic waves of infection.
    * Includes error bars (red) from bootstrap analysis.
 
-5. **SIRS Finding the Immunity Fraction to Prevent Spread**
+3. **SIRS Finding the Immunity Fraction to Prevent Spread**
 
    * Reads `SIRSpart5data.txt`.
    * Plot shows **average fraction of infected sites** vs **immune fraction**.
-   * Used to identify minimum immunity fraction for disease prevention.
+   * Used to identify the minimum immunity fraction for disease prevention.
 
 
 
@@ -191,40 +121,34 @@ All graphs are produced from the `DATAFILES/makes_all_the_graphs.py` script.
 1. Run the simulation scripts to produce data files:
 
    ```bash
-   python GoLpart2.py
-   python GoLpart3.py
    python SIRSpart3.py
    python SIRSpart4.py
    python SIRSpart5.py
    ```
-2. Generate all graphs by running:
+2. Save all produced .txt files in the `DATAFILES/` folder, then generate all graphs by running:
 
    ```bash
-   python DATAFILES/makes_all_the_graphs.py
+   python DATAFILES/makes all the graphs.py
    ```
 
-   This will collect all .txt outputs and recreate the five graphs in seen in the `GRAPHS/` folder.
+   This will collect all .txt outputs and recreate the five graphs seen in the `GRAPHS/` folder.
    
-4. Optional: Animate simulations using `GoLanimation.py` or `SIRSanimation.py`.
+4. Optional: Animate simulations using `SIRSanimation.py`.
 
 
 
 ## **5. Notes**
 
-* **Game of Life:**
-
-  * Equilibration times vary; histogram shows typical distribution.
-  * Glider velocity shows how patterns propagate over time.
-
 * **SIRS Model:**
 
-  * Part 3 explores parameter space of infection/reinfection.
+  * Part 3 explores the parameter space of infection/reinfection.
   * Part 4 focuses on fluctuations along a fixed parameter slice.
-  * Part 5 explores effects of immunity fraction on outbreak prevention.
+  * Part 5 explores the effects of immunity fraction on outbreak prevention.
 
-* **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes_all_the_graphs.py`.
+* **Files:** All `.txt` files correspond to the outputs of the scripts and are read by `makes all the graphs.py`.
 
 * **Graphs:** Saved in `GRAPHS` folder; descriptive titles include relevant calculations (e.g., glider velocity).
+
 
 
 
