@@ -14,6 +14,8 @@ This repository contains a few of the coding tasks and numerical exercises compl
 
 * **SIRS Epidemic Model Simulation**: Implements the SIRS model for infection spread on a 2D lattice. Includes scripts for simulating infection dynamics, computing variance, assessing immunity thresholds, and producing colour plots and immunity graphs. Demonstrates skills in stochastic processes, bootstrap error analysis, lattice-based modelling, and reproducible plotting.
 
+* **Cahn–Hilliard Simulation**: Numerically solves the Cahn–Hilliard equation to model phase separation in binary mixtures. Includes scripts for generating and animating free energy density data, and plotting its time evolution for 100×100 systems. Demonstrates skills in PDE discretisation, numerical stability handling, and scientific visualisation.
+
 * **Poisson Equation Simulation**: Solves the 3D Poisson equation for electrostatic potential using the Jacobi iterative method under Dirichlet boundary conditions. Generates contour and vector plots of the potential and electric field, and investigates their dependence on distance. Demonstrates experience with iterative solvers, convergence control, and visual analysis of physical fields.
 
 * **Gauss–Seidel Over-Relaxed Solver**: Extends the Poisson solver using the Gauss–Seidel Successive Over-Relaxation (SOR) method to improve convergence efficiency. Determines the optimal relaxation parameter ω by measuring iteration counts across values of ω ∈ [1.7, 1.98]. Demonstrates understanding of numerical optimisation, performance benchmarking, and iterative algorithm tuning.
