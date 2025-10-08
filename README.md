@@ -10,9 +10,9 @@ This repository contains a few of the coding tasks and numerical exercises compl
 
 * **Ising Model Simulation**: Simulates the 2D Ising model on a square lattice with Glauber and Kawasaki dynamics. Produces lattice animations, numerical data with error estimates, and plots of magnetisation, susceptibility, energy, and heat capacity. Demonstrates skills in numerical simulation, statistical analysis, and visualisation of complex physical systems.
 
-* **Game of Life and SIRS Simulations**: Implements 2D cellular automata (Game of Life) and stochastic epidemic dynamics (SIRS model) on a lattice. Generates animations, numerical data, and visualisations for equilibration times, glider motion, infection prevalence, variance, and immunity thresholds. Demonstrates skills in stochastic simulation, handling periodic boundary conditions, data analysis, and reproducible plotting.
+* **Game of Life Simulation**: Implements the 2D Game of Life cellular automaton. Includes scripts for animating patterns, generating equilibration data, tracking glider motion, and producing histograms and velocity plots. Demonstrates skills in cellular automata simulation, efficient array handling, periodic boundary conditions, and reproducible visualisation.
 
-* **Cahn–Hilliard Simulation**: Numerically solves the Cahn–Hilliard equation to model phase separation in binary mixtures. Includes scripts for generating and animating free energy density data, and plotting its time evolution for 100×100 systems. Demonstrates skills in PDE discretisation, numerical stability handling, and scientific visualisation.
+* **SIRS Epidemic Model Simulation**: Implements the SIRS model for infection spread on a 2D lattice. Includes scripts for simulating infection dynamics, computing variance, assessing immunity thresholds, and producing colour plots and immunity graphs. Demonstrates skills in stochastic processes, bootstrap error analysis, lattice-based modelling, and reproducible plotting.
 
 * **Poisson Equation Simulation**: Solves the 3D Poisson equation for electrostatic potential using the Jacobi iterative method under Dirichlet boundary conditions. Generates contour and vector plots of the potential and electric field, and investigates their dependence on distance. Demonstrates experience with iterative solvers, convergence control, and visual analysis of physical fields.
 
