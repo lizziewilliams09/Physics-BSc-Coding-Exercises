@@ -10,10 +10,14 @@ The Cahn-Hilliard equation is a fourth-order nonlinear partial differential equa
 
 **Governing equations:**
 
-```
-∂φ/∂t = M ∇²μ
-μ = -aφ + aφ³ - κ∇²φ
-```
+$$
+\frac{\partial \phi}{\partial t} = M \nabla^2 \mu
+$$
+
+$$
+\mu = -a\phi + a\phi^3 - \kappa \nabla^2 \phi
+$$
+
 
 Where:
 
@@ -26,9 +30,10 @@ Over time, domains of opposite composition coarsen, and the total free energy of
 
 **Free energy density:**
 
-```
-f = -(a/2)φ² + (a/4)φ⁴ + (κ/2)(∇φ)²
-```
+$$
+f = -\frac{a}{2}\phi^2 + \frac{a}{4}\phi^4 + \frac{\kappa}{2}(\nabla \phi)^2
+$$
+
 
 
 
